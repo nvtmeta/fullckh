@@ -1,7 +1,8 @@
 export const navLinks = [
   {
-    id: 'home',
+    id: '/',
     title: 'Trang chủ',
+    icon: HiOutlineHome,
   },
   {
     id: 'video',

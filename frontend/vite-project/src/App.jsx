@@ -8,7 +8,7 @@ const App = () => {
       <div className="flex sm:flex-row flex-col w-full ">
         <Navbar />
       </div>
-      <div className="content">
+      <div className="content  sm:flex-row flex-col w-full ">
         <Banner />
         <Footer />
       </div>
