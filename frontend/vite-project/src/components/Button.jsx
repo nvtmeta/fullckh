@@ -4,12 +4,12 @@ const Button = () => {
   return (
     <button
       type="button"
-      className={`${styles.flexCenter} py-4 px-6 font-poppins
-     w-full rounded-full
-     font-medium text-[18px] text-[#000] 
-     `}
+      className={`${styles.flexCenter} py-6 px-4 font-poppins
+     w-[150px] h-[56px] rounded-full bg-secondary
+     font-medium text-[18px] text-[#000] ${styles.marginY} shadow-md
+     hover:bg-primary`}
     >
-      Đăng ký ngay
+      <span className="text-[16px]">Đăng ký ngay</span>
     </button>
   );
 };

@@ -6,9 +6,8 @@ module.exports = {
     extend: {
       colors: {
         customBg: 'rgba(255, 255, 255, 0.25)',
-        primary: '#f3f3f2',
+        primary: 'rgb(210 165 0/var(--tw-bg-opacity))',
         secondary: '#FBC91B',
-        hover: '#edf2f8',
         dimWhite: 'rgba(255, 255, 255, 0.7)',
         dimBlue: 'rgba(9, 151, 124, 0.1)',
       },
