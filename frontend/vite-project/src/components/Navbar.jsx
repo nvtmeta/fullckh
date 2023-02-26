@@ -25,7 +25,7 @@ const navLinks = [
 const NavLinks = () => (
   <ul
     className="flex md:flex-row flex-col md:mt-0 mt-4 
-  md:gap-[10px]  "
+  md:gap-[10px] z-[2]  "
   >
     {navLinks?.map((item, index) => {
       const { title, id } = item;
@@ -69,7 +69,7 @@ const Navbar = () => {
           <div
             className={`absolute backdrop-blur-[6px]  
              top-0  h-screen w-[60%]
-         z-10  md:hidden  smooth-transition p-2 pt-6 
+         z-[10]  md:hidden  smooth-transition p-2 pt-6 
          ${toggleSideBar ? 'right-0' : 'hidden'} sidebar bg-gradient
          
          `}

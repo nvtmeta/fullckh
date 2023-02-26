@@ -34,7 +34,7 @@ const Banner = () => {
           {imgCollection.map((item) => (
             <div
               key={item.id}
-              className={`w-[96%] 
+              className={`w-[94%] 
               mx-auto smooth-transition flex  rounded-3xl 
               ${item.id === 3 ? 'banner-gradient' : ''}
               `}
@@ -50,20 +50,25 @@ const Banner = () => {
                   <div
                     className={` text-white font-poppins
                    font-bold
-                   p-6 w-full self-start mt-10`}
+                   p-6 w-full self-start xs:mt-10`}
                   >
-                    <h1 className={`${styles.heading2}`}>
+                    <h1 className={`${styles.heading2} `}>
                       Học viện cầu lông{' '}
                       <span className="text-gradient">CKH</span>
                     </h1>
-                    <p className={`${styles.paragraph} font-sans mt-4 `}>
-                      Tuyển sinh lớp cầu lông cơ bản và nâng cao <br /> dành cho
-                      trẻ em và người lớn
+                    <p
+                      className={`${styles.paragraph} font-sans mt-4
+                    w-full
+                  `}
+                    >
+                      Tuyển sinh lớp cầu lông cơ bản và nâng cao{' '}
+                      <br className="xs:block hidden " /> dành cho trẻ em và
+                      người lớn
                     </p>
                     <Button />
                   </div>
                   {/* imgbanner */}
-                  <div>
+                  <div className=" xs:block hidden  self-start mt-4">
                     <img src={bannerImg3} />
                   </div>
                 </div>
