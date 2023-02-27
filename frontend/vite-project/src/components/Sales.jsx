@@ -1,8 +1,6 @@
 import React from 'react';
-import { badminton, badmintonPlayer, sale } from '../assets';
+import { badmintonPlayer, sale } from '../assets';
 import styles, { layout } from '../style';
-import { Checkmark } from 'react-checkmark';
-import { BiHappyHeartEyes } from 'react-icons/Bi';
 import { Privilege } from '../Constants';
 const Sales = () => {
   return (
@@ -17,12 +15,13 @@ const Sales = () => {
           <div className="flex flex-col">
             {' '}
             <h1
-              className={` 'font-poppins font-semibold xs:text-[48px]
+              className={`font-poppins font-semibold xs:text-[40px]
              text-[30px]  xs:leading-[76.8px] 
              leading-[50.8px] w-full text-white  text-center  `}
             >
-              Tuyển sinh <br className="md:hidden " /> lớp cầu lông <br />
-              <span className="text-gradient">cơ bản</span> và{' '}
+              Tuyển sinh <br className="md:hidden  " /> lớp cầu lông <br />
+              <span className="text-gradient ">cơ bản</span> và{' '}
+              <br className="md:hidden" />
               <span className="text-gradient-2">nâng cao</span> <br /> dành cho{' '}
               <span className="text-gradient-3">trẻ em</span> <br /> và{' '}
               <span className="text-gradient-3">người lớn</span>
@@ -37,7 +36,9 @@ const Sales = () => {
                 <span className="text-gradient-3  md:text-left text-center">
                   ĐẶC BIỆT
                 </span>
-                <span className="md:text-left text-center ">Đăng ký ngay </span>
+                <span className="  md:text-left text-center ">
+                  Đăng ký ngay{' '}
+                </span>
                 <span className="md:text-left text-center mr-4">để được </span>
               </div>
               {/* privilege */}
@@ -55,7 +56,7 @@ const Sales = () => {
                       <item.icon className="w-10 h-10 text-blue-400  " />
                     </div>
                     <p
-                      className={`font-poppins font-[500]
+                      className={`font-poppins  font-[500]
                      text-white xs:text-[20px] 
                      text-[18px] md:leading-[34.8px] leading-[28.8px]
                      mr-[-10%]

@@ -2,16 +2,21 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 import { Banner, Footer, Navbar } from './components';
 import Sales from './components/Sales';
+import Benefit from './components/Benefit';
+import styles from './style';
 
 const App = () => {
   return (
-    <div className="w-full">
-      <div className="flex sm:flex-row flex-col w-full z-2">
+    <div className={`${styles.boxWidth}`}>
+      <div
+        className={`${styles.boxWidth} flex sm:flex-row flex-col w-full z-2`}
+      >
         <Navbar />
       </div>
-      <div className="content  sm:flex-row flex-col w-full ">
+      <div className={`${styles.boxWidth} flex  flex-col w-full z-2`}>
         <Banner />
         <Sales />
+        <Benefit />
         <Footer />
       </div>
     </div>
