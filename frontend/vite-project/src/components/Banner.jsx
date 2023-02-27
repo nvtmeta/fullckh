@@ -1,9 +1,7 @@
 import React from 'react';
 import styles from '../style';
-import bannerImg from '../assets/banner.png';
-import bannerImg2 from '../assets/banner2.jpg';
+import { banner, banner2, banner3 } from '../assets';
 import { Slide } from 'react-slideshow-image';
-import bannerImg3 from '../assets/images-_1_.svg';
 import Button from './Button';
 
 const Banner = () => {
@@ -11,12 +9,12 @@ const Banner = () => {
     {
       id: 1,
       imgName: 'imgMain',
-      imgFile: bannerImg,
+      imgFile: banner,
     },
     {
       id: 2,
       imgName: 'imgMain2',
-      imgFile: bannerImg2,
+      imgFile: banner2,
     },
     {
       id: 3,
@@ -26,7 +24,7 @@ const Banner = () => {
   ];
   return (
     <div
-      className={`${styles.boxWidth}  
+      className={`${styles.boxWidth} mt-[120px]  
   `}
     >
       <div>
@@ -68,8 +66,8 @@ const Banner = () => {
                     <Button />
                   </div>
                   {/* imgbanner */}
-                  <div className=" xs:block hidden  self-start mt-4">
-                    <img src={bannerImg3} />
+                  <div className="hidden md:block  self-start mt-4">
+                    <img src={banner3} />
                   </div>
                 </div>
               ) : (

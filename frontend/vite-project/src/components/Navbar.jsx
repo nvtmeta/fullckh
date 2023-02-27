@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import logo from '../assets/2.png';
+import { logo } from '../assets';
 import { Link } from 'react-router-dom';
 import { HiOutlineMenu, HiOutlineHome } from 'react-icons/hi';
 import { AiFillHome } from 'react-icons/Ai';
 import { RiCloseLine } from 'react-icons/ri';
+import styles from '../style';
 const navLinks = [
   {
     id: '/',
@@ -50,11 +51,24 @@ const Navbar = () => {
   return (
     <>
       <div
-        className="w-full  flex p-6 justify-between  bg-[customBg] 
-    backdrop-blur-[4px] sticky z-[2]
+        className="w-full  flex p-6 justify-between 
+    backdrop-blur-[6px] fixed z-[14] top-0 bg-white   box-shadow
+
     "
       >
-        <img src={logo} className="w-[50px] h-[50px]" alt="CKH" />
+        {/* logo */}
+        <div className="flex  items-center  gap-2 justify-center">
+          <img src={logo} className="w-[50px] h-[50px] rounded-lg" alt="CKH" />
+          <div
+            className={`font-poppins font-medium text-[20px] 
+           text-[#000] 
+          mr-6
+          `}
+          >
+            CKH Academy
+          </div>
+        </div>
+        {/* navlink */}
         <div className="hidden md:flex ">
           <NavLinks />
         </div>
@@ -80,7 +94,7 @@ const Navbar = () => {
             />
             <img
               src={logo}
-              className="w-full h-[50px] object-contain"
+              className="w-full h-[50px] rounded-lg object-contain"
               alt="CKH"
             />
             <NavLinks handleClick={() => setToggleSideBar(false)} />
