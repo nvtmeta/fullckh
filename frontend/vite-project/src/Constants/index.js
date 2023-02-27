@@ -1,10 +1,9 @@
 import { AiFillStar } from 'react-icons/Ai';
-
+import { coach1, coach2, coach3 } from '../assets';
 export const navLinks = [
   {
     id: '/',
     title: 'Trang chủ',
-    icon: '',
   },
   {
     id: 'video',
@@ -39,37 +38,71 @@ export const Privilege = [
 export const Benefits = [
   {
     id: '1',
-    icon: '',
     content: `Nâng cao trình độ kĩ thuật`,
   },
   {
     id: '2',
-    icon: '',
     content: ` tư duy chiến thuật đánh đơn, đôi trong thi
     đấu Cầu lông.`,
   },
   {
     id: '3',
-    icon: '',
     content: ` Được tập luyện với lộ trình đào tạo bài bản, chuyên
     nghiệp.`,
   },
   {
     id: '4',
-    icon: '',
     content: `Nâng cao sức khoẻ thể chất, tinh thần. `,
   },
   {
     id: '5',
-    icon: '',
     content: `
      Là nơi kết nối lý tưởng
      cho những người có cùng đam mê Cầu lông. `,
   },
   {
     id: '6',
-    icon: '',
     content: `Học viên có cơ hội được giao
     lưu với các tuyển thủ chuyên nghiệp.`,
+  },
+];
+
+export const CoachSum = [
+  {
+    id: '1',
+    icon: AiFillStar,
+    img: coach1,
+    name: 'HLV CAO CHÍ CƯỜNG ',
+    content: [
+      'Hiện đang là VĐV Đội tuyển Cầu lông Ciputra Hà Nội',
+      'Cựu Vđv đội tuyển cầu lông Quốc gia Việt Nam',
+      'HCĐ đồng đội nam toàn quốc 2021🥉',
+      'HCĐ giải các tay vợt trẻ toàn quốc 2020🥉',
+    ],
+  },
+  {
+    id: '2',
+    icon: AiFillStar,
+    img: coach2,
+    name: `HLV NGUYỄN ĐÌNH KHẢI`,
+    content: [
+      'Cựu VĐV Đội tuyển Cầu lông Ciputra Hà Nội',
+      'Có rất nhiều kinh nghiệm trong việc đào tạo, huấn luyện cho các VĐV',
+      'HCĐ Đôi nam toàn quốc 2019 🥉',
+      'HCB sinh viên thành phố Hà Nội 2022🥈',
+    ],
+  },
+  {
+    id: '3',
+    icon: AiFillStar,
+    img: coach3,
+    name: `HLV NGUYỄN MINH HIẾU`,
+    content: [
+      'Hiện đang là VĐV Đội tuyển cầu lông Ciputra Hà Nội',
+      'Cựu VĐV Đội tuyển Quốc gia Việt Nam',
+      '🏆 Vô địch giải thiếu niên toàn quốc 2020 ',
+      '🏆 Vô địch giải trẻ toàn quốc 2022 ',
+      '🏆 Vô địch đôi nam trẻ xuất sắc toàn quốc  2022 ',
+    ],
   },
 ];

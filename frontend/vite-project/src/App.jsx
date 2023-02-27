@@ -4,6 +4,7 @@ import { Banner, Footer, Navbar } from './components';
 import Sales from './components/Sales';
 import Benefit from './components/Benefit';
 import styles from './style';
+import Coach from './components/Coach';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Banner />
         <Sales />
         <Benefit />
+        <Coach />
         <Footer />
       </div>
     </div>

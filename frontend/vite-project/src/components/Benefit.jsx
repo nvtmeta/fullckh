@@ -9,8 +9,8 @@ const Benefit = () => {
       className={`${layout.section} ${styles.flexCenter} 
      md:w-full md:ml-[8%]  `}
     >
-      {/* heading */}
       <div className={`flex flex-col justify-center md:w-full w-[90%]  `}>
+        {/* heading */}
         <div
           className={`${styles.heading3} flex flex-col w-full md:ml-[20%]  `}
         >
