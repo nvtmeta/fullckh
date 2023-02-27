@@ -3,6 +3,7 @@ import { badminton, badmintonPlayer, sale } from '../assets';
 import styles, { layout } from '../style';
 import { Checkmark } from 'react-checkmark';
 import { BiHappyHeartEyes } from 'react-icons/Bi';
+import { Privilege } from '../Constants';
 const Sales = () => {
   return (
     <>
@@ -20,42 +21,65 @@ const Sales = () => {
              text-[30px]  xs:leading-[76.8px] 
              leading-[50.8px] w-full text-white  text-center  `}
             >
-              Tuyển sinh lớp cầu lông <br />
+              Tuyển sinh <br className="md:hidden " /> lớp cầu lông <br />
               <span className="text-gradient">cơ bản</span> và{' '}
               <span className="text-gradient-2">nâng cao</span> <br /> dành cho{' '}
               <span className="text-gradient-3">trẻ em</span> <br /> và{' '}
               <span className="text-gradient-3">người lớn</span>
             </h1>
-            <p
-              className={`${styles.padding} flex items-center
-             justify-between w-full`}
+            <div
+              className={`${styles.padding} flex md:flex-row flex-col items-center
+             justify-between w-full mt-8`}
             >
-              <div className={`${styles.heading2} flex flex-col w-[40%] `}>
-                <span className="text-gradient-3">ĐẶC BIỆT</span>
-                đăng ký ngay để được:
+              <div
+                className={`${styles.heading2} mb-6 flex flex-col md:w-[40%] w-full flex-1 `}
+              >
+                <span className="text-gradient-3  md:text-left text-center">
+                  ĐẶC BIỆT
+                </span>
+                <span className="md:text-left text-center ">Đăng ký ngay </span>
+                <span className="md:text-left text-center mr-4">để được </span>
               </div>
               {/* privilege */}
-              <div className="flex w-[50%]  flex-col">
-                <div className="flex flex-row gap-2">
-                  <BiHappyHeartEyes className="w-[100px] h-[100px] text-blue-500" />
-                  <h2>
-                    Giảm 10% học phí cho 5 học viên ĐĂNG KÝ ĐẦU TIÊN, và giảm
-                    15% cho những học viên đăng ký học THEO CẶP (bạn bè, người
-                    yêu,…)
-                  </h2>
-                </div>
-                <BiHappyHeartEyes className="w-[100px] h-[100px] text-blue-500" />
-                Tặng miễn phí ÁO CỦA HỌC VIỆN( cho những học viên lần đầu đăng
-                ký).
+              <div
+                className={`${styles.flexCenter} flex-col md:w-[50%]  w-full`}
+              >
+                {Privilege.map((item) => (
+                  <div
+                    className={`${styles.flexCenter} relative p-4`}
+                    key={item.id}
+                  >
+                    <div
+                      className={`${styles.flexCenter} md:relative md:left-0 absolute left-[-36px] md:mr-4`}
+                    >
+                      <item.icon className="w-10 h-10 text-blue-400  " />
+                    </div>
+                    <p
+                      className={`font-poppins font-[500]
+                     text-white xs:text-[20px] 
+                     text-[18px] md:leading-[34.8px] leading-[28.8px]
+                     mr-[-10%]
+                     `}
+                    >
+                      {item.content}
+                    </p>
+                  </div>
+                ))}
               </div>
-            </p>
+            </div>
           </div>
           {/* img for sale */}
-          <img src={sale} className={`w-[100px] h-[100px] absolute right-12`} />
-          <img
-            src={badmintonPlayer}
-            className={`w-[100px] h-[100px] absolute   left-12`}
-          />
+          <div className="md:block hidden">
+            {' '}
+            <img
+              src={sale}
+              className={`w-[100px] h-[100px] absolute right-12`}
+            />
+            <img
+              src={badmintonPlayer}
+              className={`w-[100px] h-[100px] absolute   left-12`}
+            />
+          </div>
         </div>
       </div>
     </>
