@@ -113,8 +113,8 @@ export const Products = [
     title: '🔷Lớp BẮC TỪ LIÊM: thứ 3&6',
     content: [
       '🔸Khai giảng lớp: ngày 07/03/2023',
-      '🔸 Thời gian: Từ 19h-21h',
-      '🔸 Địa điểm: NHÀ THI ĐẤU QUẬN BẮC TỪ LIÊM',
+      '🔸Thời gian: Từ 19h-21h',
+      '🔸Địa điểm: NHÀ THI ĐẤU QUẬN BẮC TỪ LIÊM',
     ],
     img: class1,
   },
@@ -122,9 +122,9 @@ export const Products = [
     id: '2',
     title: '🔷Lớp HÀ ĐÔNG: thứ 2&4',
     content: [
-      '🔸 Khai giảng lớp: ngày 06/03/2023',
+      '🔸Khai giảng lớp: ngày 06/03/2023',
       '🔸Thời gian: Từ 19h45-21h45',
-      '🔸 Địa điểm: TRƯỜNG THCS NGUYỄN QUÝ ĐỨC - ĐẠI MỖ (Cạnh nội khu vườn Nhật Vinhomes Smart City - đối diện THPT Đại Mỗ) ',
+      '🔸Địa điểm: TRƯỜNG THCS NGUYỄN QUÝ ĐỨC - ĐẠI MỖ (Cạnh nội khu vườn Nhật Vinhomes Smart City - đối diện THPT Đại Mỗ) ',
     ],
     img: banner2,
   },

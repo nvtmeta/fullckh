@@ -14,14 +14,14 @@ const Product = () => {
       justify-center
       `}
       >
-        <h1>Khóa học</h1>
+        <h1 className="mb-5">Khóa học</h1>
       </div>
       {/* card product */}
       <div
         className="max-w-full 
             flex md:justify-evenly
             justify-center h-[550px] 
-            cursor-pointer 
+             
             md:flex-row flex-col md:mt-0 mt-[300px]
              ml-2   "
       >
@@ -47,10 +47,11 @@ const Product = () => {
           //     </div>
           //   </div>
           //   Card of flowbie tailwind separate img to change size easily
-          <div className="max-w-sm w-[100%] hover:slideProduct  ">
+          <div className="max-w-sm w-[100%]   ">
             <Card
               imgAlt={item.title}
-              className="h-[550px] relative md:mt-0 mt-6  "
+              className="h-[550px] relative md:mt-0 mt-6
+               cursor-pointer  scroll-smooth transition-transform"
             >
               <img
                 src={item.img}
@@ -81,11 +82,14 @@ const Product = () => {
                   ))}
                 </p>
                 <Button
-                  className="bg-secondary   
+                  color="black"
+                  pill={true}
+                  className="   
               font-poppins
-               font-semibold
-                hover:bg-primary smooth-transition mt-6
-                absolute top-[150px] text-black
+               font-medium
+                hover:bg-secondary smooth-transition mt-6 
+                absolute top-[150px] bg-white  border-[1px]
+                 border-solid border-[#FAD961]
                 "
                 >
                   Tìm hiểu thêm

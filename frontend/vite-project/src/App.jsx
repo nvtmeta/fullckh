@@ -1,11 +1,14 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import { Banner, Footer, Navbar } from './components';
+import { Banner, Navbar } from './components';
 import Sales from './components/Sales';
 import Benefit from './components/Benefit';
 import styles from './style';
 import Coach from './components/Coach';
 import Product from './components/Product';
+import VideosImgPrev from './components/VideosImgPrev';
+import Review from './components/Review';
+import FooterA from './components/Footer';
 
 const App = () => {
   return (
@@ -21,7 +24,9 @@ const App = () => {
         <Benefit />
         <Coach />
         <Product />
-        <Footer />
+        <VideosImgPrev />
+        <Review />
+        <FooterA />
       </div>
     </div>
   );
