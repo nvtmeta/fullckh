@@ -27,6 +27,22 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
+/* can chinh nut preview video  */
+.video-react .video-react-big-play-button {
+  top: 50%;
+  left: 44%;
+  border-radius: 999px;
+}
+
+.video-react .video-react-control:before,
+.video-react .video-react-big-play-button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .box-shadow-2 {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }

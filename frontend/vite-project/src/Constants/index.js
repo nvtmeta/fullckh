@@ -1,5 +1,12 @@
 import { AiFillStar } from 'react-icons/Ai';
-import { banner2, class1, coach1, coach2, coach3 } from '../assets';
+import {
+  banner2,
+  class1,
+  coach1,
+  coach2,
+  coach3,
+  thinhavatar,
+} from '../assets';
 export const navLinks = [
   {
     id: '/',
@@ -127,5 +134,34 @@ export const Products = [
       '🔸Địa điểm: TRƯỜNG THCS NGUYỄN QUÝ ĐỨC - ĐẠI MỖ (Cạnh nội khu vườn Nhật Vinhomes Smart City - đối diện THPT Đại Mỗ) ',
     ],
     img: banner2,
+  },
+];
+
+export const ReviewCons = [
+  {
+    id: '1',
+    name: 'Nguyễn Viết Thịnh',
+    content:
+      ' Nhân dịp đầu năm học mới, tôi xin gửi lời kính chúc tới Ban giám hiệu nhà trường, các thầy cô giáo, và toàn thể các học sinh thân yêu của trường với những lời chúc tốt đẹp nhất! Kính chúc các thầy cô một năm học mới thật nhiều sức khỏe hạnh phúc và thành công.',
+    img: thinhavatar,
+    job: 'Bảo vệ',
+  },
+  {
+    id: '2',
+    name: 'Vũ Quý',
+    content:
+      'Ok, guy ,see you congra, happy Amazing!, This makes me more happy when playing this sports!',
+    img: '',
+    job: 'Ông trùm Marketing',
+  },
+  {
+    id: '3',
+    name: 'Jack',
+    content: `'Tiếng trống vang, Nơi ươn mầm tinh hoa. Nhộn nhịp tưng bừng với ngày hội lớn. Cùng thầy cô và mầm non đất nước. Gương mặt hồng cùng nụ cười rạng rỡ. Khắc dấu thời gian cho tương lai mới. Tiếng trống vang xa, lắng đọng nơi này. Nơi kho tàng kiến thức được mở ra. Nơi đàn chim non chắp cánh ước mơ.
+
+     
+      `,
+    img: '',
+    job: 'Baoiks',
   },
 ];

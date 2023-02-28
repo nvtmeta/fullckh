@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../style';
 import { banner, banner2, banner3 } from '../assets';
 import { Slide } from 'react-slideshow-image';
-import Button from './Button';
+import { Button } from 'flowbite-react';
 
 const Banner = () => {
   const imgCollection = [
@@ -63,7 +63,19 @@ const Banner = () => {
                       <br className="xs:block hidden " /> dành cho trẻ em và
                       người lớn
                     </p>
-                    <Button />
+                    <Button
+                      color="black"
+                      pill={true}
+                      className="   
+                          font-poppins
+                          font-medium
+                          hover:bg-primary smooth-transition md:mt-18 
+                          mt-16
+                           p-2 bg-secondary
+                "
+                    >
+                      <span className="text-xl  text-black"> Đăng ký ngay</span>
+                    </Button>
                   </div>
                   {/* imgbanner */}
                   <div className="hidden md:block  self-start mt-4">

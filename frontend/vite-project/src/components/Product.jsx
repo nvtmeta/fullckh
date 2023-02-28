@@ -56,7 +56,7 @@ const Product = () => {
               <img
                 src={item.img}
                 className=" w-[80%] m-auto 
-                h-[200px]  object-cover rounded-2xl md:mt-0 box-shadow absolute 
+                h-[200px]  object-cover box-shadow rounded-2xl md:mt-0  absolute 
                 top-4 right-2 left-2  
                 "
               />

@@ -2,6 +2,7 @@ import React from 'react';
 import { badmintonPlayer, sale } from '../assets';
 import styles, { layout } from '../style';
 import { Privilege } from '../Constants';
+import { Button } from 'flowbite-react';
 const Sales = () => {
   return (
     <>
@@ -68,6 +69,18 @@ const Sales = () => {
                 ))}
               </div>
             </div>
+            <Button
+              color="black"
+              pill={true}
+              className="   
+              font-poppins
+               font-medium
+                hover:bg-primary smooth-transition md:mt-6 
+                bg-secondary md:p-4 md:w-[30%] m-auto py-4 mt-5 md:mb-0 mb-10
+                "
+            >
+              <span className="text-2xl"> Đăng ký ngay</span>
+            </Button>
           </div>
           {/* img for sale */}
           <div className="md:block hidden">
