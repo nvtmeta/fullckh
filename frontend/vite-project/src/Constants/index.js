@@ -69,10 +69,10 @@ export const Benefits = [
 
 export const CoachSum = [
   {
-    id: '1',
+    id: 1,
     icon: AiFillStar,
     img: coach1,
-    name: 'HLV CAO CHÍ CƯỜNG ',
+    name: '☘️ HLV CAO CHÍ CƯỜNG ',
     content: [
       'Hiện đang là VĐV Đội tuyển Cầu lông Ciputra Hà Nội',
       'Cựu Vđv đội tuyển cầu lông Quốc gia Việt Nam',
@@ -81,10 +81,10 @@ export const CoachSum = [
     ],
   },
   {
-    id: '2',
+    id: 2,
     icon: AiFillStar,
     img: coach2,
-    name: `HLV NGUYỄN ĐÌNH KHẢI`,
+    name: `☘️ HLV NGUYỄN ĐÌNH KHẢI`,
     content: [
       'Cựu VĐV Đội tuyển Cầu lông Ciputra Hà Nội',
       'Có rất nhiều kinh nghiệm trong việc đào tạo, huấn luyện cho các VĐV',
@@ -93,10 +93,10 @@ export const CoachSum = [
     ],
   },
   {
-    id: '3',
+    id: 3,
     icon: AiFillStar,
     img: coach3,
-    name: `HLV NGUYỄN MINH HIẾU`,
+    name: `☘️ HLV NGUYỄN MINH HIẾU`,
     content: [
       'Hiện đang là VĐV Đội tuyển cầu lông Ciputra Hà Nội',
       'Cựu VĐV Đội tuyển Quốc gia Việt Nam',
