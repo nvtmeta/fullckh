@@ -5,6 +5,7 @@ import { HiOutlineMenu, HiOutlineHome } from 'react-icons/hi';
 import { AiFillHome } from 'react-icons/Ai';
 import { RiCloseLine } from 'react-icons/ri';
 import styles from '../style';
+import { HideScroll } from 'react-hide-on-scroll';
 const navLinks = [
   {
     id: '/',
@@ -50,54 +51,60 @@ const Navbar = () => {
   const [toggleSideBar, setToggleSideBar] = useState(false);
   return (
     <>
-      <div
-        className="w-full  flex p-6 justify-between 
+      <div>
+        <div
+          className="w-full  flex p-4 justify-between 
     backdrop-blur-[6px] fixed z-[14] top-0 bg-white   box-shadow
 
     "
-      >
-        {/* logo */}
-        <div className="flex  items-center  gap-2 justify-center">
-          <img src={logo} className="w-[50px] h-[50px] rounded-lg" alt="CKH" />
-          <div
-            className={`font-poppins font-medium text-[20px] 
+        >
+          {/* logo */}
+          <div className="flex  items-center  gap-2 justify-center">
+            <img
+              src={logo}
+              className="w-[50px] h-[50px] rounded-lg"
+              alt="CKH"
+            />
+            <div
+              className={`font-poppins font-medium text-[20px] 
            text-[#000] 
           mr-6
           `}
-          >
-            CKH Academy
+            >
+              CKH Academy
+            </div>
           </div>
-        </div>
-        {/* navlink */}
-        <div className="hidden md:flex ">
-          <NavLinks />
-        </div>
-        {/* mobile responsive */}
-        <div className="sm:hidden flex items-center justify-center">
-          {!toggleSideBar && (
-            <HiOutlineMenu
-              className="w-6 h-6"
-              onClick={() => setToggleSideBar(!toggleSideBar)}
-            />
-          )}
-          <div
-            className={`absolute backdrop-blur-[6px]  
+          {/* navlink */}
+          <div className="hidden md:flex ">
+            <NavLinks />
+          </div>
+          {/* mobile responsive */}
+          <div className="sm:hidden flex items-center justify-center">
+            {!toggleSideBar && (
+              <HiOutlineMenu
+                className="w-6 h-6"
+                onClick={() => setToggleSideBar(!toggleSideBar)}
+              />
+            )}
+            <div
+              className={`absolute backdrop-blur-[6px]  
              top-0  h-screen w-[60%]
          z-[10]  md:hidden  smooth-transition p-2 pt-6 
          ${toggleSideBar ? 'right-0' : 'hidden'} sidebar bg-gradient
          
          `}
-          >
-            <RiCloseLine
-              className="w-8 h-8"
-              onClick={() => setToggleSideBar(!toggleSideBar)}
-            />
-            <img
-              src={logo}
-              className="w-full h-[50px] rounded-lg object-contain"
-              alt="CKH"
-            />
-            <NavLinks handleClick={() => setToggleSideBar(false)} />
+            >
+              <RiCloseLine
+                className="w-8 h-8"
+                onClick={() => setToggleSideBar(!toggleSideBar)}
+              />
+              <img
+                src={logo}
+                className="w-full h-[50px] rounded-lg object-contain"
+                alt="CKH"
+              />
+              <NavLinks handleClick={() => setToggleSideBar(false)} />
+            </div>
           </div>
         </div>
       </div>

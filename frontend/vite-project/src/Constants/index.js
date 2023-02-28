@@ -1,5 +1,5 @@
 import { AiFillStar } from 'react-icons/Ai';
-import { coach1, coach2, coach3 } from '../assets';
+import { banner2, class1, coach1, coach2, coach3 } from '../assets';
 export const navLinks = [
   {
     id: '/',
@@ -104,5 +104,28 @@ export const CoachSum = [
       '🏆 Vô địch giải trẻ toàn quốc 2022 ',
       '🏆 Vô địch đôi nam trẻ xuất sắc toàn quốc  2022 ',
     ],
+  },
+];
+
+export const Products = [
+  {
+    id: '1',
+    title: '🔷Lớp BẮC TỪ LIÊM: thứ 3&6',
+    content: [
+      '🔸Khai giảng lớp: ngày 07/03/2023',
+      '🔸 Thời gian: Từ 19h-21h',
+      '🔸 Địa điểm: NHÀ THI ĐẤU QUẬN BẮC TỪ LIÊM',
+    ],
+    img: class1,
+  },
+  {
+    id: '2',
+    title: '🔷Lớp HÀ ĐÔNG: thứ 2&4',
+    content: [
+      '🔸 Khai giảng lớp: ngày 06/03/2023',
+      '🔸Thời gian: Từ 19h45-21h45',
+      '🔸 Địa điểm: TRƯỜNG THCS NGUYỄN QUÝ ĐỨC - ĐẠI MỖ (Cạnh nội khu vườn Nhật Vinhomes Smart City - đối diện THPT Đại Mỗ) ',
+    ],
+    img: banner2,
   },
 ];

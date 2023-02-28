@@ -5,10 +5,11 @@ import Sales from './components/Sales';
 import Benefit from './components/Benefit';
 import styles from './style';
 import Coach from './components/Coach';
+import Product from './components/Product';
 
 const App = () => {
   return (
-    <div className={`${styles.boxWidth}`}>
+    <div className={`${styles.boxWidth} overflow-x-hidden overflow-y-auto`}>
       <div
         className={`${styles.boxWidth} flex sm:flex-row flex-col w-full z-2`}
       >
@@ -19,6 +20,7 @@ const App = () => {
         <Sales />
         <Benefit />
         <Coach />
+        <Product />
         <Footer />
       </div>
     </div>

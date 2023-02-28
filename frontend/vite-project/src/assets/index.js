@@ -8,6 +8,7 @@ import badmintonPlayer from './badminton-player.svg';
 import coach1 from './coach1.jpg';
 import coach2 from './khai.jpg';
 import coach3 from './hieu.jpg';
+import class1 from './lophoc1.jpg';
 export {
   logo,
   banner,
@@ -19,4 +20,5 @@ export {
   coach1,
   coach2,
   coach3,
+  class1,
 };
