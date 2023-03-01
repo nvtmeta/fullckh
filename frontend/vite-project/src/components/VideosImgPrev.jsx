@@ -20,14 +20,8 @@ const VideosImgPrev = () => {
       </div>
 
       {/* video */}
-      <div
-        className="border-[5px]  bg-[#ccc] object-cover 
-      border-solid border-[#000]
-     rounded-[30px] m-auto md:w-[800px] overflow-x-auto w-[350px]
-     
-     "
-      >
-        <Player className="flex items-center justify-center ">
+      <div className="">
+        {/* <Player className="flex items-center justify-center ">
           <source
             className="  border-[5px]  bg-[#ccc] object-cover 
       border-solid border-[#000]
@@ -35,11 +29,20 @@ const VideosImgPrev = () => {
             src={videoHomepage}
             type="video/mp4"
           />
-        </Player>
+        </Player> */}
+        <iframe
+          width="200px"
+          height="900"
+          src="https://www.youtube.com/embed/t21BJwr221g"
+          title="🏸💪Bài tập tấn công nửa sau💪🏸"
+          allowfullscreen="true"
+          className=" md:w-[700px]  md:h-[400px] 
+          w-[295px] h-[170px]  border-[5px] 
+           bg-[#ccc] object-cover 
+          border-solid border-[#000]
+         rounded-[30px] m-auto  flex items-center justify-center"
+        ></iframe>
       </div>
-      {/* <video autoPlay muted loop>
-        <source src={videoHomepage} type="video/mp4" />
-      </video> */}
       {/* <Button color="black" pill={true} className=" m-6 p-4  bg-secondary">
         <h1 className={`text-2xl leading-10`}>
           Click để xem các video <br /> khác của CKH Academy
