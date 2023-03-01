@@ -13,7 +13,10 @@ const Review = () => {
       `}
       >
         <h1 className="mt-14 ">
-          Mọi người nói gì về <span className="text-gradient">CKH</span> ?
+          Mọi người nói gì <br className="md:hidden" />{' '}
+          <div className="text-center">
+            về <span className="text-gradient">CKH</span> ?
+          </div>
         </h1>
       </div>
       {/* review */}
