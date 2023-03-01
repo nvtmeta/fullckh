@@ -7,7 +7,7 @@ const VideosImgPrev = () => {
   return (
     <div
       className=" flex flex-col items-center justify-center 
-      relative
+      relative md:top-0 top-80
     "
     >
       {/* heading */}
@@ -18,18 +18,12 @@ const VideosImgPrev = () => {
       >
         <h1 className="mb-5">Video</h1>
       </div>
-      {/* lop phu video layer */}
-      {/* <div
-        className=" 
-        absolute inset-0 bg-[#000] opacity-30
-      m-auto rounded-[40px] index-10
-        "
-      ></div> */}
+
       {/* video */}
       <div
         className="border-[5px]  bg-[#ccc] object-cover 
       border-solid border-[#000]
-     rounded-[30px] m-auto w-[800px] overflow-hidden 
+     rounded-[30px] m-auto md:w-[800px] overflow-hidden w-[350px]
      
      "
       >

@@ -5,14 +5,14 @@ import { ReviewCons } from '../Constants';
 import { Quote } from '../assets';
 const Review = () => {
   return (
-    <div>
+    <div className="relative top-[300px]">
       {/* heading */}
       <div
         className={`${styles.heading3} flex-1 flex items-center
-      justify-center mt-10
+      justify-center mt-10 md:top-0 
       `}
       >
-        <h1 className="mt-14">
+        <h1 className="mt-14 ">
           Mọi người nói gì về <span className="text-gradient">CKH</span> ?
         </h1>
       </div>
@@ -20,7 +20,7 @@ const Review = () => {
       <div
         className=" flex mt-10 mb-20
         justify-around
-       flex 
+        md:flex-row flex-col 
        "
       >
         {ReviewCons.map((item) => (
