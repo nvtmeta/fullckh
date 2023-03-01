@@ -1,6 +1,6 @@
 import React from 'react';
 import { Footer } from 'flowbite-react';
-import { BsFacebook } from 'react-icons/Bs';
+// import { BsFacebook } from 'react-icons/Bs';
 import { FaTiktok } from 'react-icons/Fa';
 import { logo } from '../assets';
 const FooterA = () => {
@@ -121,7 +121,7 @@ const FooterA = () => {
             >
               <div className="text-4xl mr-20 rounded-[10px]  flex gap-6 text-dimWhite">
                 <a href={linkFace}>
-                  <BsFacebook color="#4267B2" className="rounded-[10px]" />
+                  {/* <BsFacebook color="#4267B2" className="rounded-[10px]" /> */}
                 </a>
                 <a
                   className="cursor-pointer "
