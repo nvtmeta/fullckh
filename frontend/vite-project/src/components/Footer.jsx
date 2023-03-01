@@ -33,8 +33,8 @@ const FooterA = () => {
               <div className="mt-6 md:text-xl text-dimWhite">
                 Zalo: 0862731386, 0848926689
               </div>
-              <div className=" mt-6 md:text-xl text-dimWhite">
-                Email: hocviencaulongck@gmail.com
+              <div className=" mt-6 md:mr-0  md:text-xl text-dimWhite">
+                Email: <span className="mr-28">hocviencaulongck@gmail.com</span>
               </div>
             </div>
             <div

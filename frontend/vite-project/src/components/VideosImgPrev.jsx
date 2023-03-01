@@ -31,16 +31,16 @@ const VideosImgPrev = () => {
           />
         </Player> */}
         <iframe
-          width="200px"
-          height="900"
+          width="300"
+          height="300"
           src="https://www.youtube.com/embed/t21BJwr221g"
           title="🏸💪Bài tập tấn công nửa sau💪🏸"
           allowfullscreen="true"
           className=" md:w-[700px]  md:h-[400px] 
-          w-[295px] h-[170px]  border-[5px] 
+           border-[5px] 
            bg-[#ccc] object-cover 
           border-solid border-[#000]
-         rounded-[30px] m-auto  flex items-center justify-center"
+         rounded-[30px] m-auto  flex items-center justify-center "
         ></iframe>
       </div>
       {/* <Button color="black" pill={true} className=" m-6 p-4  bg-secondary">
