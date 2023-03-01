@@ -1,7 +1,7 @@
 import React from 'react';
 import { Footer } from 'flowbite-react';
-// import { BsFacebook } from 'react-icons/Bs';
-// import { FaTiktok } from 'react-icons/Fa';
+import { BsFacebook } from 'react-icons/bs';
+import { FaTiktok } from 'react-icons/fa';
 import { logo } from '../assets';
 const FooterA = () => {
   const linkFace =
@@ -119,7 +119,7 @@ const FooterA = () => {
               className=" mt-4  flex space-x-6
              sm:mt-0 sm:justify-center"
             >
-              {/* <div className="text-4xl mr-20 rounded-[10px]  flex gap-6 text-dimWhite">
+              <div className="text-4xl mr-20 rounded-[10px]  flex gap-6 text-dimWhite">
                 <a href={linkFace}>
                   <BsFacebook color="#4267B2" className="rounded-[10px]" />
                 </a>
@@ -129,7 +129,7 @@ const FooterA = () => {
                 >
                   <FaTiktok />
                 </a>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>

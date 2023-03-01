@@ -1,4 +1,4 @@
-import { AiFillStar } from 'react-icons/Ai';
+import { AiFillStar } from 'react-icons/ai';
 import {
   banner2,
   class1,

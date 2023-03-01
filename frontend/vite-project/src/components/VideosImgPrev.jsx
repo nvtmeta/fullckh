@@ -23,7 +23,7 @@ const VideosImgPrev = () => {
       <div
         className="border-[5px]  bg-[#ccc] object-cover 
       border-solid border-[#000]
-     rounded-[30px] m-auto md:w-[800px] overflow-hidden w-[350px]
+     rounded-[30px] m-auto md:w-[800px] overflow-x-auto w-[350px]
      
      "
       >
