@@ -27,13 +27,13 @@ const FooterA = () => {
               <div className=" text-xl text-gradient font-poppins font-semibold mt-4 ">
                 Never doubt yourself
               </div>
-              <div className="mt-10 text-xl text-dimWhite">
+              <div className="mt-10 md:text-xl text-dimWhite">
                 Điện thoại: 0862731386, 0848926689
               </div>
-              <div className="mt-6 text-xl text-dimWhite">
+              <div className="mt-6 md:text-xl text-dimWhite">
                 Zalo: 0862731386, 0848926689
               </div>
-              <div className=" text-xl mt-6 text-dimWhite">
+              <div className=" mt-6 md:text-xl text-dimWhite">
                 Email: hocviencaulongck@gmail.com
               </div>
             </div>

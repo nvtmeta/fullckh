@@ -20,6 +20,18 @@ body {
   overflow-y: hidden;
 }
 
+@media (min-width: 1060px) {
+  .navLinksResponsive {
+    display: block;
+  }
+}
+
+@media (max-width: 1060px) {
+  .navLinksMobile {
+    display: none;
+  }
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

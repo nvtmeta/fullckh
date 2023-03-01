@@ -36,24 +36,26 @@ const NavLinks = ({ toggleSideBar, setToggleSideBar }) => {
         const { title, id } = item;
 
         return (
-          <Link
-            to={id}
-            key={index}
-            className="font-poppins font-normal cursor-pointer
+          <div>
+            <Link
+              to={id}
+              key={index}
+              className="font-poppins font-normal cursor-pointer
               text-[16px] hover:bg-secondary rounded-[999px] flex 
               items-center justify-center p-4 
                transition-shadow md:mt-0 mt-4 relative
               "
-            onClick={() => {
-              return id === '/' && setToggleSideBar(!toggleSideBar);
-            }}
-          >
-            <div className="mr-4  md:static absolute inset-0 left-8 top-5 ">
-              {' '}
-              <item.icon />
-            </div>
-            <div>{title}</div>
-          </Link>
+              onClick={() => {
+                return id === '/' && setToggleSideBar(!toggleSideBar);
+              }}
+            >
+              <div className="mr-4  md:static absolute inset-0 left-8 top-5 ">
+                {' '}
+                <item.icon />
+              </div>
+              <div className="text-black ">{title}</div>
+            </Link>
+          </div>
         );
       })}
     </ul>
@@ -88,7 +90,7 @@ const Navbar = () => {
             </div>
           </div>
           {/* navlink pc */}
-          <div className="hidden md:flex ">
+          <div className="navLinksResponsive navLinksMobile">
             <NavLinks />
           </div>
           {/* mobile responsive */}
@@ -102,7 +104,7 @@ const Navbar = () => {
             ></div>
           )}
           {/* navbar mobile */}
-          <div className="bodyOverflowY sm:hidden flex items-center justify-center">
+          <div className=" sm:hidden flex items-center justify-center">
             {!toggleSideBar && (
               <HiOutlineMenu
                 className="w-6 h-6 cursor-pointer"
@@ -113,8 +115,8 @@ const Navbar = () => {
             <div
               className={`absolute backdrop-blur-[6px]  
      top-0  h-screen w-[60%]
- z-[10]  md:hidden  smooth-transition p-2 pt-6 
- ${toggleSideBar ? 'right-0 sidebar' : 'sidebar1'}  bg-gradient
+ z-[10]  md:hidden   p-2 pt-6 
+ ${toggleSideBar ? 'right-0 sidebar' : 'sidebar1'}   bg-gradient
  
  `}
             >
@@ -123,7 +125,7 @@ const Navbar = () => {
                 onClick={() => setToggleSideBar(!toggleSideBar)}
               />
               <div
-                className="inline-block ml-16 cursor-pointer "
+                className="inline-block ml-[38%] cursor-pointer "
                 onClick={() => setToggleSideBar(!toggleSideBar)}
               >
                 <img
