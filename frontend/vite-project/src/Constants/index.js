@@ -157,7 +157,7 @@ export const ReviewCons = [
   {
     id: '3',
     name: 'Jack',
-    content: `'Tiếng trống vang, Nơi ươn mầm tinh hoa. Nhộn nhịp tưng bừng với ngày hội lớn. Cùng thầy cô và mầm non đất nước. Gương mặt hồng cùng nụ cười rạng rỡ. Khắc dấu thời gian cho tương lai mới. Tiếng trống vang xa, lắng đọng nơi này. Nơi kho tàng kiến thức được mở ra. Nơi đàn chim non chắp cánh ước mơ.
+    content: `'Tiếng trống vang, Nơi ươn mầm tinh hoa. Nhộn nhịp tưng bừng với ngày hội lớn. Cùng thầy cô và mầm non đất nước. Gương mặt hồng cùng nụ cười rạng rỡ. Khắc dấu thời gian cho tương lai mới. Tiếng trống vang xa, lắng đọng nơi này.
 
      
       `,

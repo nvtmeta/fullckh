@@ -12,7 +12,7 @@ const Review = () => {
       justify-center mt-10 md:top-0 
       `}
       >
-        <h1 className="mt-14 ">
+        <h1 className="md:mt-[-200px] mt-14 mr-4 ">
           Mọi người nói gì <br className="md:hidden" />{' '}
           <div className="text-center">
             về <span className="text-gradient">CKH</span> ?
@@ -23,13 +23,13 @@ const Review = () => {
       <div
         className=" flex mt-10 mb-20
         justify-around
-        md:flex-row flex-col 
+        md:flex-row flex-col md:gap-0 gap-5
        "
       >
         {ReviewCons.map((item) => (
           <div className="flex  flex-1 mx-4  ">
             <Card key={item.id} className="relative h-[300px]  ">
-              <div className="absolute top-5 left-5">
+              <div className="absolute  md:top-5 md:left-5 top-2 left-6">
                 <img
                   src={Quote}
                   className="w-[32px] h-[32px] 
@@ -40,7 +40,7 @@ const Review = () => {
               <p
                 className="font-normal text-gray-700
                dark:text-gray-400
-               mb-4
+               md:mb-4 md:mt-0  mt-4 mb-10
                "
               >
                 {item.content}

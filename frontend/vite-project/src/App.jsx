@@ -12,7 +12,9 @@ import FooterA from './components/Footer';
 
 const App = () => {
   return (
-    <div className={`${styles.boxWidth} overflow-x-hidden overflow-y-hidden`}>
+    <div
+      className={`${styles.boxWidth}  smooth-transition overflow-x-hidden overflow-y-hidden`}
+    >
       <div
         className={`${styles.boxWidth} flex sm:flex-row flex-col w-full z-2`}
       >

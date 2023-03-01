@@ -4,14 +4,12 @@ import { BsFacebook } from 'react-icons/bs';
 import { FaTiktok } from 'react-icons/fa';
 import { logo } from '../assets';
 const FooterA = () => {
-  const linkFace =
-    'https://www.facebook.com/people/H%E1%BB%8Dc-vi%E1%BB%87n-c%E1%BA%A7u-l%C3%B4ng-CKH/100089549126926/?sk=about';
+  const linkFace = 'https://www.facebook.com/profile.php?id=100089549126926';
   return (
-    <div className="relative top-[300px] mb-[290px]">
-      <Footer
-        container={true}
-        className="bg-slate-900 text-white
-       
+    <div className=" relative top-[300px] mb-[290px]">
+      <div
+        className="bg-black text-white
+        p-8
           "
       >
         <div className="w-full ">
@@ -29,15 +27,20 @@ const FooterA = () => {
               <div className=" text-xl text-gradient font-poppins font-semibold mt-4 ">
                 Never doubt yourself
               </div>
-              <div className="mt-10 text-xl">
+              <div className="mt-10 text-xl text-dimWhite">
                 Điện thoại: 0862731386, 0848926689
               </div>
-              <div className="mt-6 text-xl">Zalo: 0862731386, 0848926689</div>
-              <div className=" text-xl mt-6">
+              <div className="mt-6 text-xl text-dimWhite">
+                Zalo: 0862731386, 0848926689
+              </div>
+              <div className=" text-xl mt-6 text-dimWhite">
                 Email: hocviencaulongck@gmail.com
               </div>
             </div>
-            <div className="grid mr-10 grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-14">
+            <div
+              className="grid mr-10 grid-cols-1 
+            gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-14 md:mt-0 mt-10"
+            >
               <div>
                 <Footer.Title className="text-xl  text-white" title="Về CKH" />
                 <Footer.LinkGroup col={true}>
@@ -108,7 +111,10 @@ const FooterA = () => {
             </div>
           </div>
           <Footer.Divider className="opacity-0" />
-          <div className="w-full ml-10 mb-6 sm:flex sm:items-center sm:justify-between">
+          <div
+            className="w-full md:ml-10 mb-6 sm:flex
+           sm:items-center sm:justify-between"
+          >
             <Footer.Copyright
               className=" text-dimWhite  text-xl font-normal "
               href="#"
@@ -116,10 +122,10 @@ const FooterA = () => {
               year={'2023'}
             />
             <div
-              className=" mt-4  flex space-x-6
-             sm:mt-0 sm:justify-center"
+              className="   flex space-x-6
+             sm:mt-0 sm:justify-center mt-10"
             >
-              <div className="text-4xl mr-20 rounded-[10px]  flex gap-6 text-dimWhite">
+              <div className="text-4xl mr-20 rounded-[10px] md:mt-0   flex gap-6 text-dimWhite">
                 <a href={linkFace}>
                   <BsFacebook color="#4267B2" className="rounded-[10px]" />
                 </a>
@@ -133,7 +139,7 @@ const FooterA = () => {
             </div>
           </div>
         </div>
-      </Footer>
+      </div>
     </div>
   );
 };

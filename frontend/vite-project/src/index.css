@@ -16,6 +16,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.bodyOverflowY {
+  overflow-y: hidden;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -25,6 +29,16 @@ body {
 
 .smooth-transition {
   transition: all 0.3s ease-in-out;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, .3);
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 21;
 }
 
 /* can chinh nut preview video  */
@@ -155,9 +169,15 @@ body {
 }
 
 .sidebar {
-  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
+
+.sidebar1 {
+  -webkit-animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
 
 @keyframes bounce {
 
@@ -184,12 +204,24 @@ body {
   }
 
   100% {
-    -webkit-transform: translateX(100px);
-    transform: translateX(100px);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
-@keyframes slide-top {
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slide-left {
   0% {
     -webkit-transform: translateX(100%);
     transform: translateX(100%);

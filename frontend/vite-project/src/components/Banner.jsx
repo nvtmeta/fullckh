@@ -24,7 +24,7 @@ const Banner = () => {
   ];
   return (
     <div
-      className={`${styles.boxWidth} mt-[120px]  
+      className={`${styles.boxWidth} mt-[120px]  z-0
   `}
     >
       <div>

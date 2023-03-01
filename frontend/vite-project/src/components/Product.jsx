@@ -23,7 +23,7 @@ const Product = () => {
             justify-center h-[550px] 
              
             md:flex-row flex-col md:mt-0 mt-[300px]
-             ml-2   "
+             ml-2  md:mr-0 mr-2 "
       >
         {Products.map((item) => (
           //   <div
