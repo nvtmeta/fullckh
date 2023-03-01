@@ -1,7 +1,7 @@
 import React from 'react';
 import { Footer } from 'flowbite-react';
-import { BsFacebook } from 'react-icons/bs';
-import { FaTiktok } from 'react-icons/fa';
+// import { FaTiktok } from 'react-icons/fa';
+// import { SiFacebook } from 'react-icons/Si';
 import { logo } from '../assets';
 const FooterA = () => {
   const linkFace = 'https://www.facebook.com/profile.php?id=100089549126926';
@@ -34,12 +34,12 @@ const FooterA = () => {
                 Zalo: 0862731386, 0848926689
               </div>
               <div className=" mt-6 md:mr-0  md:text-xl text-dimWhite">
-                Email: <span className="mr-28">hocviencaulongck@gmail.com</span>
+                Email: <span>hocviencaulongck@gmail.com</span>
               </div>
             </div>
             <div
               className="grid mr-10 grid-cols-1 
-            gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-14 md:mt-0 mt-10"
+            gap-8  sm:grid-cols-3 sm:gap-14 md:mt-4 mt-20"
             >
               <div>
                 <Footer.Title className="text-xl  text-white" title="Về CKH" />
@@ -125,17 +125,17 @@ const FooterA = () => {
               className="   flex space-x-6
              sm:mt-0 sm:justify-center mt-10"
             >
-              <div className="text-4xl mr-20 rounded-[10px] md:mt-0   flex gap-6 text-dimWhite">
+              {/* <div className="text-4xl mr-20 rounded-[10px] md:mt-0   flex gap-6 text-dimWhite">
                 <a href={linkFace}>
-                  <BsFacebook color="#4267B2" className="rounded-[10px]" />
+                  <SiFacebook />
                 </a>
                 <a
                   className="cursor-pointer "
                   href="https://www.tiktok.com/@hocviencaulongckh?fbclid=IwAR3pu8rlP23R3fGbZ8x5Ghxtui5LNat1jlMWaQcp-kUTYHhNxFO8j4mtJpI"
                 >
-                  <FaTiktok />
-                </a>
-              </div>
+                  {/* <FaTiktok /> */}
+              {/* </a>
+              </div>  */}
             </div>
           </div>
         </div>

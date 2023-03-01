@@ -42,7 +42,7 @@ body {
 }
 
 .smooth-transition {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .modal {
@@ -183,13 +183,13 @@ body {
 }
 
 .sidebar {
-  -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-left 0.5s;
+  animation: slide-left 0.5s both;
 }
 
 .sidebar1 {
-  -webkit-animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-right 0.5s both;
+  animation: slide-right 0.5s both;
 }
 
 
@@ -227,11 +227,13 @@ body {
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
+    opacity: 1;
   }
 
   100% {
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
+    opacity: 0;
   }
 }
 
@@ -239,11 +241,13 @@ body {
   0% {
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
+    opacity: 0;
   }
 
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
+    opacity: 1;
   }
 }
 
