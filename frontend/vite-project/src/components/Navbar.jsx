@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { logo } from '../assets';
 import { Link } from 'react-router-dom';
 import { HiOutlineMenu, HiOutlineHome } from 'react-icons/hi';
-import { AiFillHome } from 'react-icons/Ai';
+import { AiFillHome } from 'react-icons/ai';
 import { RiCloseLine } from 'react-icons/ri';
 import styles from '../style';
 import { HideScroll } from 'react-hide-on-scroll';
