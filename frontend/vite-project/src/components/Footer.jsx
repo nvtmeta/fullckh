@@ -9,7 +9,7 @@ const FooterA = () => {
     <div className=" relative top-[300px] mb-[290px]">
       <div
         className="bg-black text-white
-        p-8
+        p-8 ml-[-10px]
           "
       >
         <div className="w-full ">
