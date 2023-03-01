@@ -185,6 +185,7 @@ body {
 .sidebar {
   -webkit-animation: slide-left 0.5s;
   animation: slide-left 0.5s both;
+  transition: All ease 0.2s;
 }
 
 .sidebar1 {
