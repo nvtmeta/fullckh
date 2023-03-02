@@ -21,7 +21,7 @@ const FooterA = () => {
               <div className="flex ">
                 <Footer.Brand href="" src={logo} alt="CKH logo" name="CKH" />
                 <div className=" mt-[2%] text-2xl font-semibold">
-                  <span className="text-gradient">CKH</span> Academy
+                  <span className="text-gradient">CKH</span> Badminton Academy
                 </div>
               </div>
               <div className=" text-xl text-gradient font-poppins font-semibold mt-4 ">

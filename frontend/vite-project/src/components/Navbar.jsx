@@ -11,7 +11,7 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import ClassIcon from '@mui/icons-material/Class';
 const navLinks = [
   {
-    id: '/',
+    id: '#',
     title: 'Trang chủ',
     icon: HomeIcon,
   },
@@ -79,21 +79,23 @@ const Navbar = () => {
     "
         >
           {/* logo */}
-          <div className="flex  items-center  gap-2 justify-center">
-            <img
-              src={logo}
-              className="w-[50px] h-[50px] rounded-lg"
-              alt="CKH"
-            />
-            <div
-              className={`font-poppins font-medium text-[20px] 
+          <Link to="/">
+            <div className="flex cursor-pointer  items-center  gap-2 justify-center">
+              <img
+                src={logo}
+                className="w-[50px] h-[50px] rounded-lg"
+                alt="CKH"
+              />
+              <div
+                className={`font-poppins font-medium text-[20px] 
            text-[#000] 
           mr-6
           `}
-            >
-              CKH Academy
+              >
+                CKH Badminton Academy
+              </div>
             </div>
-          </div>
+          </Link>
           {/* navlink pc */}
           <div className="navLinksResponsive navLinksMobile">
             <NavLinks />

@@ -28,7 +28,7 @@ const Banner = () => {
   `}
     >
       <div>
-        <Slide>
+        <Slide className="smooth-transition">
           {imgCollection.map((item) => (
             <div
               key={item.id}
