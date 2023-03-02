@@ -119,9 +119,11 @@ const Navbar = () => {
 
             <div
               className={`absolute backdrop-blur-[6px]  
-     top-0  h-screen w-[60%]
- z-[10]  md:hidden   p-2 pt-6 
- ${toggleSideBar ? 'right-0 sidebar' : 'sidebar1'}  transition-all  bg-gradient
+            top-0  h-screen w-[60%]
+            z-[10]  md:hidden   p-2 pt-6 
+            ${
+              toggleSideBar ? 'right-0 ' : ''
+            } overflow-y-auto  transition-all  bg-gradient
  
  `}
             >
