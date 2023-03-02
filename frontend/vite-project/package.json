@@ -9,6 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.11",
+    "@mui/material": "^5.11.11",
     "flowbite": "^1.6.3",
     "flowbite-react": "^0.3.8",
     "framer-motion": "^10.0.0",
@@ -18,7 +22,6 @@
     "react-checkmark": "^1.4.0",
     "react-dom": "^18.2.0",
     "react-hide-on-scroll": "^1.1.4",
-    "react-icons": "^4.7.1",
     "react-router-dom": "^6.8.1",
     "react-slideshow-image": "^4.2.1",
     "swiper": "^8.4.2",

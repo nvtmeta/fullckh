@@ -1,29 +1,34 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { logo } from '../assets';
 import { Link } from 'react-router-dom';
-import { HiOutlineMenu, HiChatAlt2 } from 'react-icons/hi';
-import { AiOutlineHome, AiFillYoutube } from 'react-icons/ai';
-import { RiCloseLine } from 'react-icons/ri';
+// import { HiOutlineMenu, HiChatAlt2 } from 'react-icons/hi';
+import HomeIcon from '@mui/icons-material/Home';
+import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
+// import { RiCloseLine } from 'react-icons/ri';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import ClassIcon from '@mui/icons-material/Class';
 const navLinks = [
   {
     id: '/',
     title: 'Trang chủ',
-    icon: AiOutlineHome,
+    icon: HomeIcon,
   },
   {
     id: 'video',
     title: 'Video',
-    icon: AiFillYoutube,
+    icon: YouTubeIcon,
   },
   {
     id: 'course',
     title: 'Khóa học',
-    icon: AiOutlineHome,
+    icon: ClassIcon,
   },
   {
     id: 'inbox',
     title: 'Tư vấn',
-    icon: HiChatAlt2,
+    icon: QuestionAnswerIcon,
   },
 ];
 const NavLinks = ({ toggleSideBar, setToggleSideBar }) => {
@@ -49,7 +54,7 @@ const NavLinks = ({ toggleSideBar, setToggleSideBar }) => {
                 return id === '/' && setToggleSideBar(!toggleSideBar);
               }}
             >
-              <div className="mr-4  md:static absolute inset-0 left-8 top-5 ">
+              <div className="mr-4  md:static absolute inset-0 left-4 top-4 ">
                 {' '}
                 <item.icon />
               </div>
@@ -106,7 +111,7 @@ const Navbar = () => {
           {/* navbar mobile */}
           <div className=" sm:hidden flex items-center justify-center">
             {!toggleSideBar && (
-              <HiOutlineMenu
+              <MenuIcon
                 className="w-6 h-6 cursor-pointer"
                 onClick={() => setToggleSideBar(!toggleSideBar)}
               />
@@ -116,16 +121,17 @@ const Navbar = () => {
               className={`absolute backdrop-blur-[6px]  
      top-0  h-screen w-[60%]
  z-[10]  md:hidden   p-2 pt-6 
- ${toggleSideBar ? 'right-0 sidebar' : 'sidebar1'}   bg-gradient
+ ${toggleSideBar ? 'right-0 sidebar' : 'sidebar1'}  transition-all  bg-gradient
  
  `}
             >
-              <RiCloseLine
-                className="w-8 h-8 cursor-pointer"
+              <CloseIcon
+                className="mb-8 cursor-pointer"
                 onClick={() => setToggleSideBar(!toggleSideBar)}
               />
+
               <div
-                className="inline-block ml-[38%] cursor-pointer "
+                className="inline-block ml-[26%] cursor-pointer "
                 onClick={() => setToggleSideBar(!toggleSideBar)}
               >
                 <img
